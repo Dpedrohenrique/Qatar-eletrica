@@ -105,37 +105,52 @@ export default function Header() {
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <nav className="flex flex-col space-y-4 pt-4">
               <button
-                onClick={() => scrollToSection('home')}
+                onClick={() => {
+                  scrollToSection('home');
+                  setMobileMenuOpen(false);
+                }}
                 className="text-foreground hover:text-secondary transition-colors text-left"
-                data-testid="mobile-nav-home"
+                data-testid="nav-home"
               >
                 Início
               </button>
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => {
+                  scrollToSection('about');
+                  setMobileMenuOpen(false);
+                }}
                 className="text-foreground hover:text-secondary transition-colors text-left"
-                data-testid="mobile-nav-about"
+                data-testid="nav-about"
               >
                 Sobre
               </button>
               <button
-                onClick={() => scrollToSection('products')}
+                onClick={() => {
+                  scrollToSection('products');
+                  setMobileMenuOpen(false);
+                }}
                 className="text-foreground hover:text-secondary transition-colors text-left"
-                data-testid="mobile-nav-products"
+                data-testid="nav-products"
               >
                 Produtos
               </button>
               <button
-                onClick={() => scrollToSection('partners')}
+                onClick={() => {
+                  scrollToSection('partners');
+                  setMobileMenuOpen(false);
+                }}
                 className="text-foreground hover:text-secondary transition-colors text-left"
-                data-testid="mobile-nav-partners"
+                data-testid="nav-partners"
               >
                 Parceiros
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  scrollToSection('contact');
+                  setMobileMenuOpen(false);
+                }}
                 className="text-foreground hover:text-secondary transition-colors text-left"
-                data-testid="mobile-nav-contact"
+                data-testid="nav-contact"
               >
                 Contato
               </button>
