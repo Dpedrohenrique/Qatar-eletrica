@@ -35,7 +35,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <img 
-                src="@assets/qatar_logo_1758721420313.png" 
+                src="@assets/Qatar png_1758732165959.png" 
                 alt="Qatar Elétrica" 
                 className="h-10 w-auto"
                 data-testid="img-logo"

@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="@assets/qatar_logo_1758721420313.png" 
+                src="@assets/Qatar png_1758732165959.png" 
                 alt="Qatar Elétrica" 
                 className="h-8 w-auto filter brightness-0 invert"
                 data-testid="img-footer-logo"
