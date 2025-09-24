@@ -1,3 +1,5 @@
+import qatarLogo from "@assets/qatar_logo_1758733293839.png";
+
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,7 +20,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="@assets/qatar_logo_1758733293839.png" 
+                src={qatarLogo}
                 alt="Qatar Elétrica" 
                 className="h-8 w-auto rounded-lg"
                 data-testid="img-footer-logo"
