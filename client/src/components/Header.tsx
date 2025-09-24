@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import qatarLogo from "@assets/qatar_logo_1758733293839.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <img 
-                src="@assets/Qatar png_1758732743315.png" 
+                src={qatarLogo}
                 alt="Qatar Elétrica" 
                 className="h-10 w-auto"
                 data-testid="img-logo"
