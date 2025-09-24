@@ -1,0 +1,197 @@
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`Solicitação de Orçamento - ${formData.name}`);
+    const body = encodeURIComponent(
+      `Nome: ${formData.name}\n` +
+      `E-mail: ${formData.email}\n` +
+      `Telefone: ${formData.phone}\n\n` +
+      `Mensagem:\n${formData.message}`
+    );
+    const mailtoLink = `mailto:vendas@qatareletrica.com.br?subject=${subject}&body=${body}`;
+    
+    window.location.href = mailtoLink;
+    
+    toast({
+      title: "Solicitação Enviada",
+      description: "Seu cliente de e-mail foi aberto com os dados preenchidos.",
+    });
+    
+    // Reset form
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  return (
+    <section id="contact" className="py-16 lg:py-24 gradient-bg hero-pattern">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <i className="fas fa-map-marker-alt mr-2"></i>
+            Entre em Contato
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Fale com Nossa Equipe
+          </h2>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Estamos prontos para atender suas necessidades em materiais elétricos e automação industrial.
+          </p>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 className="text-2xl font-bold text-primary mb-6">Informações de Contato</h3>
+            
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-building text-white"></i>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary mb-1">Razão Social</h4>
+                  <p className="text-muted-foreground" data-testid="text-company-name">QATAR COMÉRCIO DE MATERIAIS ELÉTRICOS LTDA</p>
+                  <p className="text-sm text-muted-foreground" data-testid="text-cnpj">CNPJ: 18.758.925/0001-61</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-map-marker-alt text-white"></i>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary mb-1">Endereço</h4>
+                  <p className="text-muted-foreground" data-testid="text-address">Rua Anjo Custódio, 58 – Vila Formosa</p>
+                  <p className="text-muted-foreground" data-testid="text-city">São Paulo – SP, CEP: 03358-040</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-phone text-white"></i>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary mb-1">Telefone</h4>
+                  <p className="text-muted-foreground" data-testid="text-phone">(11) 2651-7674</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i className="fas fa-envelope text-white"></i>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary mb-1">E-mail</h4>
+                  <p className="text-muted-foreground" data-testid="text-email">vendas@qatareletrica.com.br</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-border">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:+551126517674"
+                  className="flex-1 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors text-center"
+                  data-testid="button-call"
+                >
+                  <i className="fas fa-phone mr-2"></i>
+                  Ligar Agora
+                </a>
+                <a
+                  href="mailto:vendas@qatareletrica.com.br"
+                  className="flex-1 border-2 border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors text-center"
+                  data-testid="button-email"
+                >
+                  <i className="fas fa-envelope mr-2"></i>
+                  Enviar E-mail
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <h3 className="text-2xl font-bold text-white mb-6">Solicite um Orçamento</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label className="block text-white mb-2 font-medium">Nome Completo</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Seu nome completo"
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
+                  data-testid="input-name"
+                />
+              </div>
+              <div>
+                <label className="block text-white mb-2 font-medium">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="seu@email.com"
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
+                  data-testid="input-email"
+                />
+              </div>
+              <div>
+                <label className="block text-white mb-2 font-medium">Telefone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="(11) 99999-9999"
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
+                  data-testid="input-phone"
+                />
+              </div>
+              <div>
+                <label className="block text-white mb-2 font-medium">Mensagem</label>
+                <textarea
+                  rows={4}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Descreva suas necessidades em materiais elétricos..."
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white resize-none"
+                  data-testid="textarea-message"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+                data-testid="button-submit"
+              >
+                <i className="fas fa-paper-plane mr-2"></i>
+                Solicitar Orçamento
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
