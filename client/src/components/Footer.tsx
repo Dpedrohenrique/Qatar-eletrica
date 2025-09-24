@@ -35,10 +35,42 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">Produtos</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Fios e Cabos</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Iluminação</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Infraestrutura</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Automação</a></li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('products')}
+                  className="text-primary-foreground/80 hover:text-white transition-colors text-left"
+                  data-testid="footer-nav-products-fios"
+                >
+                  Fios e Cabos
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('products')}
+                  className="text-primary-foreground/80 hover:text-white transition-colors text-left"
+                  data-testid="footer-nav-products-iluminacao"
+                >
+                  Iluminação
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('products')}
+                  className="text-primary-foreground/80 hover:text-white transition-colors text-left"
+                  data-testid="footer-nav-products-infraestrutura"
+                >
+                  Infraestrutura
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('products')}
+                  className="text-primary-foreground/80 hover:text-white transition-colors text-left"
+                  data-testid="footer-nav-products-automacao"
+                >
+                  Automação
+                </button>
+              </li>
             </ul>
           </div>
           
@@ -95,7 +127,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; 2024 Qatar Elétrica. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Qatar Elétrica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

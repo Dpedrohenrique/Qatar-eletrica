@@ -92,11 +92,7 @@ export default function Products() {
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">{product.title}</h3>
-              <p className="text-muted-foreground mb-4">{product.description}</p>
-              <div className="text-secondary font-medium">
-                <i className="fas fa-arrow-right mr-2"></i>
-                Ver produtos
-              </div>
+              <p className="text-muted-foreground">{product.description}</p>
             </div>
           ))}
         </div>

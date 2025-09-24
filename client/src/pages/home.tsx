@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Products from "@/components/Products";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
+import Map from "@/components/Map";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Products />
       <Partners />
       <Contact />
+      <Map />
       <Footer />
     </div>
   );
