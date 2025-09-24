@@ -1,6 +1,26 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
+function WhatsAppButton() {
+  const phoneNumber = "551126517674"; // Brazil country code + phone number (correct E.164 format)
+  const message = "Olá! Gostaria de saber mais sobre os materiais elétricos da Qatar Elétrica.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  return (
+    <a
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+      data-testid="whatsapp-button"
+      title="Fale conosco no WhatsApp"
+      aria-label="Fale conosco no WhatsApp"
+    >
+      <i className="fab fa-whatsapp text-2xl"></i>
+    </a>
+  );
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -192,6 +212,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <WhatsAppButton />
     </section>
   );
 }
