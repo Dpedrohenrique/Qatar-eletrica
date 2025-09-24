@@ -80,4 +80,27 @@
   .smooth-scroll {
     scroll-behavior: smooth;
   }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite reverse;
+  }
+  
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll {
+      animation: none;
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

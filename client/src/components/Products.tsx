@@ -1,56 +1,57 @@
+import wiresImage from "@assets/stock_images/electrical_wires_and_d3b0721c.jpg";
+import lightingImage from "@assets/stock_images/led_lighting_bulbs_a_8c580eb0.jpg";
+import infrastructureImage from "@assets/stock_images/electrical_control_p_7ff11fc6.jpg";
+import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
+import motorsImage from "@assets/stock_images/industrial_electric__a64fc299.jpg";
+import sensorsImage from "@assets/stock_images/industrial_sensors_p_5fdaedcc.jpg";
+import toolsImage from "@assets/stock_images/electrical_tools_pro_8d8bec7e.jpg";
+import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
+import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
+
 export default function Products() {
   const products = [
     {
-      icon: "fas fa-plug",
-      gradient: "from-blue-500 to-blue-600",
+      image: wiresImage,
       title: "Fios e Cabos",
       description: "Fios e cabos elétricos de alta qualidade para instalações residenciais, comerciais e industriais."
     },
     {
-      icon: "fas fa-lightbulb",
-      gradient: "from-yellow-500 to-orange-500",
+      image: lightingImage,
       title: "Iluminação",
       description: "Soluções completas em iluminação LED, lâmpadas e luminárias para todos os ambientes."
     },
     {
-      icon: "fas fa-building",
-      gradient: "from-gray-500 to-gray-600",
+      image: infrastructureImage,
       title: "Infraestrutura",
       description: "Componentes para infraestrutura elétrica, quadros de distribuição e painéis de controle."
     },
     {
-      icon: "fas fa-power-off",
-      gradient: "from-red-500 to-red-600",
+      image: outletsImage,
       title: "Tomadas e Interruptores",
       description: "Tomadas, interruptores e componentes para instalações elétricas residenciais e comerciais."
     },
     {
-      icon: "fas fa-cog",
-      gradient: "from-green-500 to-green-600",
+      image: motorsImage,
       title: "Motores",
       description: "Motores elétricos industriais e comerciais para diversas aplicações e potências."
     },
     {
-      icon: "fas fa-satellite-dish",
-      gradient: "from-purple-500 to-purple-600",
+      image: sensorsImage,
       title: "Sensores",
       description: "Sensores industriais para automação, controle de processos e monitoramento."
     },
     {
-      icon: "fas fa-tools",
-      gradient: "from-indigo-500 to-indigo-600",
+      image: toolsImage,
       title: "Ferramentas",
       description: "Ferramentas profissionais e equipamentos para instalação e manutenção elétrica."
     },
     {
-      icon: "fas fa-robot",
-      gradient: "from-teal-500 to-teal-600",
+      image: automationImage,
       title: "Automação",
       description: "Sistemas de automação industrial, CLPs, IHMs e soluções para controle de processos."
     },
     {
-      icon: "fas fa-shield-alt",
-      gradient: "from-orange-500 to-red-500",
+      image: safetyImage,
       title: "EPIS",
       description: "Equipamentos de proteção individual para segurança em trabalhos com eletricidade."
     }
@@ -79,8 +80,16 @@ export default function Products() {
               className="bg-white rounded-xl shadow-sm card-hover p-6 border border-border"
               data-testid={`card-product-${index}`}
             >
-              <div className={`w-16 h-16 bg-gradient-to-br ${product.gradient} rounded-xl flex items-center justify-center mb-4`}>
-                <i className={`${product.icon} text-white text-2xl`}></i>
+              <div className="w-full h-48 rounded-xl overflow-hidden mb-4">
+                <img 
+                  src={product.image} 
+                  alt={product.title}
+                  loading="lazy"
+                  decoding="async"
+                  width="320"
+                  height="192"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">{product.title}</h3>
               <p className="text-muted-foreground mb-4">{product.description}</p>

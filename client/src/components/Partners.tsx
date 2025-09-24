@@ -40,24 +40,45 @@ export default function Partners() {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-6 bg-muted rounded-xl hover:shadow-md transition-shadow"
-              data-testid={`partner-${index}`}
-            >
-              <div className={`${partner.color} font-bold text-xl text-center`}>
-                {partner.name}
-                {partner.subtitle && (
-                  <>
-                    <br />
-                    <span className="text-sm">{partner.subtitle}</span>
-                  </>
-                )}
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll">
+            {/* First set of partners */}
+            {partners.map((partner, index) => (
+              <div
+                key={`first-${index}`}
+                className="flex-shrink-0 w-48 mx-4 flex items-center justify-center p-6 bg-muted rounded-xl hover:shadow-md transition-shadow"
+                data-testid={`partner-${index}`}
+              >
+                <div className={`${partner.color} font-bold text-xl text-center`}>
+                  {partner.name}
+                  {partner.subtitle && (
+                    <>
+                      <br />
+                      <span className="text-sm">{partner.subtitle}</span>
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+            {/* Duplicate set for infinite scroll */}
+            {partners.map((partner, index) => (
+              <div
+                key={`second-${index}`}
+                className="flex-shrink-0 w-48 mx-4 flex items-center justify-center p-6 bg-muted rounded-xl hover:shadow-md transition-shadow"
+                data-testid={`partner-duplicate-${index}`}
+              >
+                <div className={`${partner.color} font-bold text-xl text-center`}>
+                  {partner.name}
+                  {partner.subtitle && (
+                    <>
+                      <br />
+                      <span className="text-sm">{partner.subtitle}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
