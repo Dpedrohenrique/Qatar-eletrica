@@ -7,9 +7,6 @@ export default function Map() {
             <i className="fas fa-map-marker-alt mr-2"></i>
             Nossa Localização
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
-            Visite Nossa Loja
-          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Estamos localizados na Vila Formosa, São Paulo. Venha conhecer nosso showroom com mais de 20.000 itens em estoque.
           </p>
@@ -49,7 +46,7 @@ export default function Map() {
                     Horário de Funcionamento
                   </h3>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 8:00 - 18:00<br />
+                    Segunda a Sexta: 8:00 - 12:00 das 13:00 - 17:30<br />
                     Sábado: 8:00 - 12:00<br />
                     Domingo: Fechado
                   </p>

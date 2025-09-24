@@ -26,6 +26,8 @@ export default function Contact() {
     name: '',
     email: '',
     phone: '',
+    city: '',
+    state: '',
     message: ''
   });
   const { toast } = useToast();
@@ -38,7 +40,9 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Nome: ${formData.name}\n` +
       `E-mail: ${formData.email}\n` +
-      `Telefone: ${formData.phone}\n\n` +
+      `Telefone: ${formData.phone}\n` +
+      `Cidade: ${formData.city}\n` +
+      `Estado: ${formData.state}\n\n` +
       `Mensagem:\n${formData.message}`
     );
     const mailtoLink = `mailto:vendas@qatareletrica.com.br?subject=${subject}&body=${body}`;
@@ -51,7 +55,7 @@ export default function Contact() {
     });
     
     // Reset form
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({ name: '', email: '', phone: '', city: '', state: '', message: '' });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -186,6 +190,34 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
                   data-testid="input-phone"
                 />
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-white mb-2 font-medium">Cidade</label>
+                  <input
+                    type="text"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleInputChange}
+                    placeholder="Sua cidade"
+                    required
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
+                    data-testid="input-city"
+                  />
+                </div>
+                <div>
+                  <label className="block text-white mb-2 font-medium">Estado</label>
+                  <input
+                    type="text"
+                    name="state"
+                    value={formData.state}
+                    onChange={handleInputChange}
+                    placeholder="SP"
+                    required
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"
+                    data-testid="input-state"
+                  />
+                </div>
               </div>
               <div>
                 <label className="block text-white mb-2 font-medium">Mensagem</label>
