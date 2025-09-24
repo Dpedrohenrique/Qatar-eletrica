@@ -39,7 +39,7 @@ export default function Header() {
               <img 
                 src={qatarLogo}
                 alt="Qatar Elétrica" 
-                className="h-20 w-auto"
+                className="h-20 w-auto rounded-lg"
                 data-testid="img-logo"
               />
             </div>
