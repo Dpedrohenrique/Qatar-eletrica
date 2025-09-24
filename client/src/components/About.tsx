@@ -1,3 +1,5 @@
+import aboutImage from "@assets/freepik__isometric-geometric-illustration-clean-and-modern-__34263_1758736981354.png";
+
 export default function About() {
   return (
     <section id="about" className="py-16 lg:py-24 bg-white">
@@ -5,7 +7,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src={aboutImage}
               alt="Electrical equipment and industrial workspace"
               className="rounded-2xl shadow-xl w-full h-auto"
               data-testid="img-about-workspace"
