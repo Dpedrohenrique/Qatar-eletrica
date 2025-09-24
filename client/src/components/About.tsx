@@ -1,4 +1,4 @@
-import aboutImage from "@assets/freepik__isometric-geometric-illustration-clean-and-modern-__34263_1758736981354.png";
+import aboutImage from "@assets/freepik__the-style-is-candid-image-photography-with-natural__47778_1758737225046.png";
 
 export default function About() {
   return (
