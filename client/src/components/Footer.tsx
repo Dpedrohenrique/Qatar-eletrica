@@ -17,8 +17,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-white">Qatar</span>
-              <div className="ml-1 w-6 h-1 bg-accent rounded-full"></div>
+              <img 
+                src="@assets/qatar_logo_1758721420313.png" 
+                alt="Qatar Elétrica" 
+                className="h-8 w-auto filter brightness-0 invert"
+                data-testid="img-footer-logo"
+              />
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Distribuidora especializada em materiais elétricos e automação industrial.

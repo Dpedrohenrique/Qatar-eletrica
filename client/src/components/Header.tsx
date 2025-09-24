@@ -34,8 +34,12 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
-              <span className="text-3xl font-bold text-primary">Qatar</span>
-              <div className="ml-1 w-8 h-1 bg-accent rounded-full"></div>
+              <img 
+                src="@assets/qatar_logo_1758721420313.png" 
+                alt="Qatar Elétrica" 
+                className="h-10 w-auto"
+                data-testid="img-logo"
+              />
             </div>
           </div>
           
