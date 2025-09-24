@@ -17,7 +17,8 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80;
+      const header = document.querySelector('header');
+      const headerHeight = header?.getBoundingClientRect().height || 112;
       const targetPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: targetPosition,
@@ -38,7 +39,7 @@ export default function Header() {
               <img 
                 src={qatarLogo}
                 alt="Qatar Elétrica" 
-                className="h-10 w-auto"
+                className="h-20 w-auto"
                 data-testid="img-logo"
               />
             </div>

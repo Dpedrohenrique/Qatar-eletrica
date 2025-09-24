@@ -47,7 +47,7 @@ export default function Map() {
                   </h3>
                   <p className="text-muted-foreground">
                     Segunda a Sexta: 8:00 - 12:00 das 13:00 - 17:30<br />
-                    Sábado: 8:00 - 12:00<br />
+                    Sábado: Fechado<br />
                     Domingo: Fechado
                   </p>
                 </div>

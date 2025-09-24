@@ -130,12 +130,13 @@ export default function Contact() {
             <div className="mt-8 pt-8 border-t border-border">
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+551126517674"
+                  href="https://wa.me/551126517674?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20materiais%20el%C3%A9tricos%20da%20Qatar%20El%C3%A9trica."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors text-center"
-                  data-testid="button-call"
+                  data-testid="button-whatsapp"
                 >
-                  <i className="fas fa-phone mr-2"></i>
-                  Ligar Agora
+                  📲 Chamar no WhatsApp
                 </a>
                 <a
                   href="mailto:vendas@qatareletrica.com.br"
