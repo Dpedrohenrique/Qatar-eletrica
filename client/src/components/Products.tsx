@@ -2,8 +2,8 @@ import wiresImage from "@assets/freepik__the-style-is-candid-image-photography-w
 import lightingImage from "@assets/stock_images/led_lighting_bulbs_a_8c580eb0.jpg";
 import infrastructureImage from "@assets/os-quadros-de-tensao-com-disjuntores-estao-nas-posicoes-e-na-caixa-eletrica-grande-para-o-painel-de-distribuicao-eletrica-e-os-cabos-eletricos-temporarios-sao-trocados_1758725508527.jpg";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
-import motorsImage from "@assets/stock_images/motor_elétrico_indus_62caf663.jpg";
-import sensorsImage from "@assets/stock_images/sensor_elétrico_indu_b8f4a438.jpg";
+import motorsImage from "@assets/freepik__motor-eletrico-weg__29916_1758730878097.png";
+import sensorsImage from "@assets/4-principais-modelos-de-sensores-de-proximidade_1758731012751.jpg";
 import toolsImage from "@assets/vista-superior-diferentes-tipos-de-ferramentas_1758725912923.jpg";
 import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
 import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
