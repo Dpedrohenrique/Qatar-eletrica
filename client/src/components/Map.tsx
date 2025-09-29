@@ -12,9 +12,9 @@ export default function Map() {
           </p>
         </div>
         
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-border">
-            <div className="aspect-[16/9] w-full">
+            <div className="aspect-[4/3] w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4836502833996!2d-46.54891072593073!3d-23.527447978765468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fb27c9bf5d5%3A0x7e0e59fb7d5f4b8f!2sRua%20Anjo%20Cust%C3%B3dio%2C%2058%20-%20Vila%20Formosa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003358-040!5e0!3m2!1spt-BR!2sbr!4v1696794851234!5m2!1spt-BR!2sbr"
                 width="100%"
