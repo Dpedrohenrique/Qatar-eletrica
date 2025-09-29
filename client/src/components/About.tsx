@@ -28,13 +28,8 @@ export default function About() {
               Localizada em São Paulo (SP), a empresa atua em todo o território nacional, com pronta entrega em toda a linha de materiais elétricos, controles e automação industrial.
             </p>
             
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              <div className="text-center p-6 bg-muted rounded-xl">
-                <i className="fas fa-warehouse text-3xl text-secondary mb-3"></i>
-                <div className="text-2xl font-bold text-primary" data-testid="text-about-stock">20K+</div>
-                <div className="text-sm text-muted-foreground">Itens em Estoque</div>
-              </div>
-              <div className="text-center p-6 bg-muted rounded-xl">
+            <div className="flex justify-center mb-8">
+              <div className="text-center p-6 bg-muted rounded-xl max-w-xs">
                 <i className="fas fa-users-cog text-3xl text-secondary mb-3"></i>
                 <div className="text-2xl font-bold text-primary" data-testid="text-about-expertise">Expert</div>
                 <div className="text-sm text-muted-foreground">Equipe Especializada</div>
@@ -43,7 +38,6 @@ export default function About() {
             
             <div className="bg-gradient-to-r from-secondary/10 to-accent/10 border border-secondary/20 rounded-xl p-6">
               <p className="text-primary font-medium">
-                <i className="fas fa-quote-left text-secondary mr-2"></i>
                 Conte com nossa equipe de profissionais para orientá-lo na melhor escolha de produtos.
               </p>
             </div>
