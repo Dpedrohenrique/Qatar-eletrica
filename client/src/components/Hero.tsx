@@ -12,7 +12,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="gradient-bg hero-pattern pt-24 pb-16 lg:pt-32 lg:pb-24">
+    <section id="home" className="gradient-bg hero-pattern pt-32 pb-32 lg:pt-40 lg:pb-40">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
