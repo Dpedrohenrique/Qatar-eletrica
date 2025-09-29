@@ -1,4 +1,4 @@
-import qatarLogo from "@assets/qatar_logo_1758733293839.png";
+import qatarLogo from "@assets/image_1759171800330.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
