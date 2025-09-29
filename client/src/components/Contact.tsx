@@ -133,7 +133,7 @@ export default function Contact() {
                   href="https://wa.me/551126517674?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20materiais%20el%C3%A9tricos%20da%20Qatar%20El%C3%A9trica."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors text-center"
+                  className="flex-1 border-2 border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors text-center"
                   data-testid="button-whatsapp"
                 >
                   📲 Chamar no WhatsApp

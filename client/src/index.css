@@ -4,14 +4,14 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(222.27deg 52.38% 16.47%);
-  --foreground: hsl(218, 54%, 20%);
+  --background: hsl(216.28deg 49.43% 17.06%);
+  --foreground: hsl(217.37deg 87.94% 60.98%);
   --primary: hsl(218, 54%, 20%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(217, 91%, 60%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(0deg 0% 94.9%);
-  --muted-foreground: hsl(215, 16%, 47%);
+  --muted: hsl(0deg 0% 100%);
+  --muted-foreground: hsl(212.73deg 23.4% 90.78%);
   --accent: hsl(217, 91%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
   --border: hsl(214, 32%, 91%);
@@ -24,9 +24,9 @@
   --input: hsl(214, 32%, 91%);
   --ring: hsl(217, 91%, 60%);
   --radius: 0.5rem;
-  --font-sans: Inter;
-  --font-serif: Architects Daughter;
-  --font-mono: Architects Daughter;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Inter', sans-serif;
+  --font-mono: 'Inter', sans-serif;
 }
 
 .dark {
