@@ -86,6 +86,14 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={() => scrollToSection('contact')}
+              className="bg-white text-secondary px-6 py-2 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary"
+              data-testid="header-supplier"
+            >
+              <i className="fas fa-handshake mr-2"></i>
+              Seja nosso fornecedor
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
               className="bg-secondary text-secondary-foreground px-6 py-2 rounded-md hover:bg-secondary/90 transition-colors font-medium"
               data-testid="header-quote"
             >
