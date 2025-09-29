@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import qatarLogo from "@assets/image_1759172472178.png";
+import qatarLogo from "@assets/Captura de tela 2025-09-29 160223 (2)_1759172608127.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
