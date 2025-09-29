@@ -1,4 +1,4 @@
-import qatarLogo from "@assets/image_1759171800330.png";
+import qatarLogo from "@assets/image_1759172064222.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -24,6 +24,7 @@ export default function Footer() {
                 alt="Qatar Elétrica" 
                 className="h-8 w-auto rounded-lg"
                 data-testid="img-footer-logo"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </div>
             <p className="text-primary-foreground/80 mb-4">

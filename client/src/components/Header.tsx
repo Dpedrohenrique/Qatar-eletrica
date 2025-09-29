@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import qatarLogo from "@assets/qatar_logo_1758735886400.png";
+import qatarLogo from "@assets/image_1759172064222.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,8 +39,9 @@ export default function Header() {
               <img 
                 src={qatarLogo}
                 alt="Qatar Elétrica" 
-                className="h-16 w-auto rounded-lg"
+                className="h-16 w-auto rounded-lg mix-blend-difference filter invert"
                 data-testid="img-logo"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </div>
           </div>
