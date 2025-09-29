@@ -83,10 +83,10 @@ export default function Header() {
             </button>
           </nav>
           
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3">
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-white text-secondary px-6 py-2 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary"
+              className="bg-white text-secondary px-4 py-1.5 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-sm"
               data-testid="header-supplier"
             >
               <i className="fas fa-handshake mr-2"></i>
@@ -94,7 +94,7 @@ export default function Header() {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-secondary text-secondary-foreground px-6 py-2 rounded-md hover:bg-secondary/90 transition-colors font-medium"
+              className="bg-white text-secondary px-4 py-1.5 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-sm"
               data-testid="header-quote"
             >
               <i className="fas fa-calculator mr-2"></i>
