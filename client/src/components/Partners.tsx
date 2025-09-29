@@ -30,7 +30,7 @@ export default function Partners() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-muted text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
             <i className="fas fa-handshake mr-2"></i>
-            Principais Parceiros
+            Principais Marcas
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             Trabalhamos com as Melhores Marcas
