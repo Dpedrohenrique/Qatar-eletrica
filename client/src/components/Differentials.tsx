@@ -1,3 +1,5 @@
+import { Zap, Truck, Users, Settings } from "lucide-react";
+
 export default function Differentials() {
   return (
     <section className="py-16 lg:py-24" style={{ backgroundColor: '#162741' }}>
@@ -13,8 +15,8 @@ export default function Differentials() {
           {/* Cartão 20K+ */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="text-center">
-              <div className="text-6xl mb-4" style={{ color: '#0202C6' }}>
-                ⚡
+              <div className="flex justify-center mb-4">
+                <Zap size={64} style={{ color: '#0202C6' }} />
               </div>
               <h3 className="text-4xl font-bold text-gray-800 mb-2">20K+</h3>
               <p className="text-gray-600 text-lg">Itens em Estoque</p>
@@ -24,8 +26,8 @@ export default function Differentials() {
           {/* Cartão Nacional */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="text-center">
-              <div className="text-6xl mb-4" style={{ color: '#0202C6' }}>
-                🚚
+              <div className="flex justify-center mb-4">
+                <Truck size={64} style={{ color: '#0202C6' }} />
               </div>
               <h3 className="text-4xl font-bold text-gray-800 mb-2">Nacional</h3>
               <p className="text-gray-600 text-lg">Pronta Entrega</p>
@@ -47,9 +49,9 @@ export default function Differentials() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="text-center mb-6">
-              <div className="flex justify-center items-center text-6xl mb-4" style={{ color: '#0202C6' }}>
-                <span className="mr-2">👥</span>
-                <span>⚙️</span>
+              <div className="flex justify-center items-center mb-4" style={{ color: '#0202C6' }}>
+                <Users size={32} className="mr-2" />
+                <Settings size={32} />
               </div>
               <h3 className="text-4xl font-bold text-gray-800 mb-2">Expert</h3>
               <p className="text-gray-600 text-lg">Equipe Especializada</p>
