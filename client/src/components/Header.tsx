@@ -84,14 +84,14 @@ export default function Header() {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="tel:+551126517674"
+            <button
+              onClick={() => scrollToSection('contact')}
               className="bg-secondary text-secondary-foreground px-6 py-2 rounded-md hover:bg-secondary/90 transition-colors font-medium"
-              data-testid="header-phone"
+              data-testid="header-quote"
             >
-              <i className="fas fa-phone mr-2"></i>
-              (11) 2651-7674
-            </a>
+              <i className="fas fa-calculator mr-2"></i>
+              Solicite um orçamento
+            </button>
           </div>
           
           <button
