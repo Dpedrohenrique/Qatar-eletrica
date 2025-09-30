@@ -42,22 +42,6 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="lg:text-right">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white/20 rounded-xl p-6 text-center">
-                  <i className="fas fa-bolt text-4xl text-accent mb-4"></i>
-                  <div className="text-2xl font-bold text-white" data-testid="text-stock-count">20K+</div>
-                  <div className="text-white/80 text-sm">Itens em Estoque</div>
-                </div>
-                <div className="bg-white/20 rounded-xl p-6 text-center">
-                  <i className="fas fa-shipping-fast text-4xl text-accent mb-4"></i>
-                  <div className="text-2xl font-bold text-white" data-testid="text-delivery">Nacional</div>
-                  <div className="text-white/80 text-sm">Pronta Entrega</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
