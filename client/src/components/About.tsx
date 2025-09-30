@@ -27,20 +27,6 @@ export default function About() {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Localizada em São Paulo (SP), a empresa atua em todo o território nacional, com pronta entrega em toda a linha de materiais elétricos, controles e automação industrial.
             </p>
-            
-            <div className="flex justify-center mb-8">
-              <div className="text-center p-6 bg-muted rounded-xl max-w-xs">
-                <i className="fas fa-users-cog text-3xl text-secondary mb-3"></i>
-                <div className="text-2xl font-bold text-primary" data-testid="text-about-expertise">Expert</div>
-                <div className="text-sm text-muted-foreground">Equipe Especializada</div>
-              </div>
-            </div>
-            
-            <div className="bg-gradient-to-r from-secondary/10 to-accent/10 border border-secondary/20 rounded-xl p-6">
-              <p className="text-primary font-medium">
-                Conte com nossa equipe de profissionais para orientá-lo na melhor escolha de produtos.
-              </p>
-            </div>
           </div>
         </div>
       </div>
