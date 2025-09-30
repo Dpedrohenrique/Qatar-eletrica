@@ -1,4 +1,4 @@
-import { Zap, Truck, Users, Settings } from "lucide-react";
+import { Zap, Truck, Users, Settings, HardHat } from "lucide-react";
 
 export default function Differentials() {
   return (
@@ -10,57 +10,53 @@ export default function Differentials() {
           </h2>
         </div>
 
-        {/* Grid de cartões principais */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* Grid de 4 cartões */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Cartão 20K+ */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Zap size={64} style={{ color: '#0202C6' }} />
+              <div className="flex justify-center mb-3">
+                <Zap size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">20K+</h3>
-              <p className="text-gray-600 text-lg">Itens em Estoque</p>
+              <h3 className="text-3xl font-bold text-gray-800 mb-1">20K+</h3>
+              <p className="text-gray-600 text-base">Itens em Estoque</p>
             </div>
           </div>
 
           {/* Cartão Nacional */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Truck size={64} style={{ color: '#0202C6' }} />
+              <div className="flex justify-center mb-3">
+                <Truck size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">Nacional</h3>
-              <p className="text-gray-600 text-lg">Pronta Entrega</p>
+              <h3 className="text-3xl font-bold text-gray-800 mb-1">Nacional</h3>
+              <p className="text-gray-600 text-base">Pronta Entrega</p>
             </div>
           </div>
-        </div>
 
-        {/* Seção Especialistas em */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-semibold text-white mb-6">Especialistas em:</h3>
-          <div className="flex flex-wrap justify-center gap-4 text-lg text-gray-300">
-            <span className="px-4 py-2 bg-white/10 rounded-full">Materiais Elétricos</span>
-            <span className="px-4 py-2 bg-white/10 rounded-full">Controles</span>
-            <span className="px-4 py-2 bg-white/10 rounded-full">Automação</span>
-          </div>
-        </div>
-
-        {/* Cartão Expert */}
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-center mb-6">
-              <div className="flex justify-center items-center mb-4" style={{ color: '#0202C6' }}>
-                <Users size={32} className="mr-2" />
-                <Settings size={32} />
+          {/* Cartão Especialistas */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="text-center">
+              <div className="flex justify-center mb-3">
+                <HardHat size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">Atendimento personalizado</h3>
-              <p className="text-gray-600 text-lg">Equipe Especializada</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Especialistas em:</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Materiais elétricos, controles, automação
+              </p>
             </div>
-            
-            {/* Box com borda suave */}
-            <div className="border-2 border-gray-200 rounded-xl p-6 bg-gray-50">
-              <p className="text-gray-700 text-center leading-relaxed">
-                Conte com nossa equipe de profissionais para orientá-lo na melhor escolha de produtos.
+          </div>
+
+          {/* Cartão Atendimento personalizado */}
+          <div className="bg-white rounded-2xl p-6 shadow-lg">
+            <div className="text-center">
+              <div className="flex justify-center items-center mb-3" style={{ color: '#0202C6' }}>
+                <Users size={24} className="mr-1" />
+                <Settings size={24} />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Atendimento personalizado</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Equipe Especializada
               </p>
             </div>
           </div>
