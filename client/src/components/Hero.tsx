@@ -56,14 +56,6 @@ export default function Hero() {
                   <div className="text-white/80 text-sm">Pronta Entrega</div>
                 </div>
               </div>
-              <div className="mt-6 text-center">
-                <div className="text-white/60 text-sm mb-2">Especialistas em:</div>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  <span className="bg-accent/20 text-white px-3 py-1 rounded-full text-xs">Materiais Elétricos</span>
-                  <span className="bg-accent/20 text-white px-3 py-1 rounded-full text-xs">Controles</span>
-                  <span className="bg-accent/20 text-white px-3 py-1 rounded-full text-xs">Automação</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
