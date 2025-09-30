@@ -53,7 +53,7 @@ export default function Differentials() {
                 <Users size={32} className="mr-2" />
                 <Settings size={32} />
               </div>
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">Expert</h3>
+              <h3 className="text-4xl font-bold text-gray-800 mb-2">Atendimento personalizado</h3>
               <p className="text-gray-600 text-lg">Equipe Especializada</p>
             </div>
             
