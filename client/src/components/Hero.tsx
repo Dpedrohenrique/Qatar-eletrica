@@ -12,7 +12,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="bg-[#162741] hero-pattern pt-24 pb-16 lg:pt-28 lg:pb-20">
+    <section id="home" className="bg-[#162741] hero-pattern pt-32 pb-32 lg:pt-40 lg:pb-40">
       <div className="container mx-auto px-4">
         <div className="text-center text-white max-w-4xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
