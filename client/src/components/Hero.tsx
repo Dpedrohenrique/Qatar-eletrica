@@ -12,13 +12,13 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="gradient-bg hero-pattern pt-40 pb-48 lg:pt-52 lg:pb-56">
+    <section id="home" className="bg-[#162741] hero-pattern pt-40 pb-48 lg:pt-52 lg:pb-56">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Materiais Elétricos de{" "}
-              <span className="text-accent">Qualidade</span>
+              <span className="text-white">Qualidade</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-white/90">
               Distribuidora especializada com mais de 20 mil itens em estoque para sua obra, manutenção ou reparo.
