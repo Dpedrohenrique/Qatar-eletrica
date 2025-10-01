@@ -4,25 +4,25 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(216.28deg 49.43% 17.06%);
-  --foreground: hsl(0deg 0% 13.73%);
-  --primary: hsl(218, 54%, 20%);
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 14%);
+  --primary: hsl(218, 49%, 17%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(217, 91%, 60%);
+  --secondary: hsl(240, 98%, 39%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(0deg 0% 100%);
-  --muted-foreground: hsl(0deg 0% 13.73%);
-  --accent: hsl(217, 91%, 60%);
+  --muted: hsl(213, 21%, 91%);
+  --muted-foreground: hsl(0, 0%, 14%);
+  --accent: hsl(240, 98%, 39%);
   --accent-foreground: hsl(0, 0%, 100%);
-  --border: hsl(214, 32%, 91%);
+  --border: hsl(213, 21%, 91%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(218, 54%, 20%);
+  --card-foreground: hsl(218, 49%, 17%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(218, 54%, 20%);
+  --popover-foreground: hsl(218, 49%, 17%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --input: hsl(214, 32%, 91%);
-  --ring: hsl(217, 91%, 60%);
+  --input: hsl(213, 21%, 91%);
+  --ring: hsl(240, 98%, 39%);
   --radius: 0.5rem;
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Inter', sans-serif;
@@ -46,7 +46,7 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, hsl(218, 54%, 20%) 0%, hsl(217, 91%, 60%) 100%);
+  background: linear-gradient(135deg, hsl(218, 49%, 17%) 0%, hsl(240, 98%, 39%) 100%);
 }
 
 .hero-pattern {
