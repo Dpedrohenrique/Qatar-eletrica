@@ -150,7 +150,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div className="bg-[#162741] rounded-2xl p-8 border border-white/20">
             <h3 className="text-2xl font-bold text-white mb-6">Solicite um Orçamento</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
