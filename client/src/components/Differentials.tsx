@@ -12,8 +12,8 @@ export default function Differentials() {
           </h2>
           </div>
 
-          {/* Grid de 4 cartões */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Grid de 4 cartões em linha */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* Cartão 20K+ */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
