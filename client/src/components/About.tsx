@@ -24,13 +24,13 @@ export default function About() {
               Excelência em Materiais Elétricos
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              A Qatar é uma distribuidora de materiais elétricos e suprimentos industriais que oferece produtos de alta qualidade para atender às demandas de indústrias de grande porte.
+              A <strong>Qatar</strong> é uma distribuidora de materiais elétricos e suprimentos industriais que oferece produtos de alta qualidade para atender às demandas de indústrias de grande porte.
             </p>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Nosso propósito é garantir eficiência, segurança e continuidade nas operações dos nossos clientes, oferecendo soluções ágeis, personalizadas e com excelente custo-benefício.
+              <strong>Nosso propósito</strong> é garantir eficiência, segurança e continuidade nas operações dos nossos clientes, oferecendo soluções ágeis, personalizadas e com excelente custo-benefício.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Mais do que fornecer produtos, buscamos construir parcerias sólidas, baseadas na confiança, na proximidade e no compromisso com o crescimento de cada cliente.
+              Mais do que fornecer produtos, buscamos construir <strong>parcerias sólidas</strong>, baseadas na confiança, na proximidade e no compromisso com o crescimento de cada cliente.
             </p>
           </div>
           </div>
