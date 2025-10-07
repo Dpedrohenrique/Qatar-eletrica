@@ -42,11 +42,10 @@ export default function Map() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-primary mb-4 flex items-center">
-                    <i className="fas fa-clock mr-2 text-secondary"></i>
-                    Horário de Funcionamento
+                    🕗 Horário de Funcionamento
                   </h3>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 8:00 - 12:00 das 13:00 - 17:30<br />
+                    Segunda a Sexta: 08h00 às 17h30<br />
                     Sábado: Fechado<br />
                     Domingo: Fechado
                   </p>
