@@ -32,14 +32,14 @@ export default function Header() {
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       scrolled ? 'bg-transparent backdrop-blur-md' : 'bg-white shadow-sm'
     }`}>
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <img 
                 src={qatarLogo}
                 alt="Qatar Elétrica" 
-                className="h-14 w-auto object-contain"
+                className="h-12 w-auto object-contain"
                 data-testid="img-logo"
               />
             </div>
@@ -48,35 +48,35 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-secondary transition-colors font-medium text-lg"
+              className="text-foreground hover:text-secondary transition-colors font-medium text-base"
               data-testid="nav-home"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-secondary transition-colors font-medium text-lg"
+              className="text-foreground hover:text-secondary transition-colors font-medium text-base"
               data-testid="nav-about"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('products')}
-              className="text-foreground hover:text-secondary transition-colors font-medium text-lg"
+              className="text-foreground hover:text-secondary transition-colors font-medium text-base"
               data-testid="nav-products"
             >
               Produtos
             </button>
             <button
               onClick={() => scrollToSection('partners')}
-              className="text-foreground hover:text-secondary transition-colors font-medium text-lg"
+              className="text-foreground hover:text-secondary transition-colors font-medium text-base"
               data-testid="nav-partners"
             >
               Parceiros
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-secondary transition-colors font-medium text-lg"
+              className="text-foreground hover:text-secondary transition-colors font-medium text-base"
               data-testid="nav-contact"
             >
               Contato
@@ -86,7 +86,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-3">
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-white text-secondary px-5 py-2 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-base"
+              className="bg-white text-secondary px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-sm"
               data-testid="header-quote"
             >
               <i className="fas fa-calculator mr-2"></i>
