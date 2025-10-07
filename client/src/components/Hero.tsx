@@ -24,7 +24,7 @@ export default function Hero() {
         />
       </div>
       <div className="absolute bottom-8 left-0 right-0">
-        <div className="pl-6 sm:pl-10 md:pl-14 lg:pl-16">
+        <div className="pl-8 sm:pl-14 md:pl-20 lg:pl-24">
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => scrollToSection('products')}
