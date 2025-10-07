@@ -5,7 +5,7 @@ import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg
 import motorsImage from "@assets/image_1759835827184.png";
 import sensorsImage from "@assets/image_1759835928129.png";
 import toolsImage from "@assets/image_1759836017588.png";
-import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
+import automationImage from "@assets/image_1759836139725.png";
 import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
 
 import ScrollAnimation from "./ScrollAnimation";
@@ -58,7 +58,7 @@ export default function Products() {
       image: automationImage,
       title: "Automação",
       description: "Sistemas de automação industrial, CLPs, IHMs e soluções para controle de processos.",
-      objectFit: "cover"
+      objectFit: "contain"
     },
     {
       image: safetyImage,
