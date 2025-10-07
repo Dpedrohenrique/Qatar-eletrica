@@ -1,5 +1,5 @@
 import wiresImage from "@assets/1 (2)_1759802009752.png";
-import lightingImage from "@assets/image_1759802084544.png";
+import lightingImage from "@assets/Produtos (1) (2)_1759843716289.png";
 import infrastructureImage from "@assets/image_1759835699824.png";
 import outletsImage from "@assets/Produtos (1)_1759838816561.png";
 import motorsImage from "@assets/image_1759835827184.png";
