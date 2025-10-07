@@ -138,7 +138,8 @@ export default function Contact() {
                   className="flex-1 border-2 border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors text-center"
                   data-testid="button-whatsapp"
                 >
-                  📲 Chamar no WhatsApp
+                  <i className="fas fa-mobile-alt mr-2" style={{ color: '#0202C6' }}></i>
+                  Chamar no WhatsApp
                 </a>
                 <a
                   href="mailto:vendas@qatareletrica.com.br"

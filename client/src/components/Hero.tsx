@@ -23,12 +23,12 @@ export default function Hero() {
           className="w-full h-auto block"
         />
       </div>
-      <div className="absolute bottom-8 left-0 right-0">
+      <div className="absolute bottom-16 left-0 right-0">
         <div className="pl-10 sm:pl-16 md:pl-24 lg:pl-28">
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => scrollToSection('products')}
-              className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors text-center flex items-center justify-center gap-2"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-2"
               data-testid="button-products"
             >
               <Package className="w-5 h-5" />
