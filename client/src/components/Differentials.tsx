@@ -53,8 +53,8 @@ export default function Differentials() {
               <div className="flex justify-center mb-3">
                 <MessagesSquare size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Atendimento personalizado</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-3xl font-bold text-gray-800 mb-1">Atendimento personalizado</h3>
+              <p className="text-gray-600 text-base">
                 Equipe Especializada
               </p>
             </div>
