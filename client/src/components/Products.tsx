@@ -1,4 +1,4 @@
-import wiresImage from "@assets/freepik__the-style-is-candid-image-photography-with-natural__63494_1758725533735.png";
+import wiresImage from "@assets/1 (2)_1759802009752.png";
 import lightingImage from "@assets/stock_images/led_lighting_bulbs_a_8c580eb0.jpg";
 import infrastructureImage from "@assets/os-quadros-de-tensao-com-disjuntores-estao-nas-posicoes-e-na-caixa-eletrica-grande-para-o-painel-de-distribuicao-eletrica-e-os-cabos-eletricos-temporarios-sao-trocados_1758725508527.jpg";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
