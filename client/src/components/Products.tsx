@@ -1,5 +1,5 @@
 import wiresImage from "@assets/1 (2)_1759802009752.png";
-import lightingImage from "@assets/stock_images/led_lighting_bulbs_a_8c580eb0.jpg";
+import lightingImage from "@assets/image_1759802084544.png";
 import infrastructureImage from "@assets/os-quadros-de-tensao-com-disjuntores-estao-nas-posicoes-e-na-caixa-eletrica-grande-para-o-painel-de-distribuicao-eletrica-e-os-cabos-eletricos-temporarios-sao-trocados_1758725508527.jpg";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
 import motorsImage from "@assets/freepik__motor-eletrico-weg__29916_1758730878097.png";
