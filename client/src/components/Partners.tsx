@@ -1,3 +1,5 @@
+import pialLogo from "@assets/1_1759839802817.png";
+
 export default function Partners() {
   const partners = [
     { name: "STECK", color: "text-red-600" },
@@ -10,7 +12,7 @@ export default function Partners() {
     { name: "HellermannTyton", color: "text-blue-700" },
     { name: "SICK", color: "text-blue-500" },
     { name: "PRYSMIAN", color: "text-purple-600" },
-    { name: "PIAL", color: "text-gray-700" },
+    { name: "PIAL", color: "text-gray-700", image: pialLogo },
     { name: "Conexel", color: "text-orange-500" },
     { name: "OMRON", color: "text-blue-600" },
     { name: "DAISA", color: "text-red-600" },
