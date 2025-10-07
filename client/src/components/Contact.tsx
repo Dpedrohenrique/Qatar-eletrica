@@ -92,7 +92,7 @@ export default function Contact() {
                   <i className="fas fa-building text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-primary mb-2">Razão Social</h4>
+                  <h4 className="font-semibold text-primary mb-1">Razão Social</h4>
                   <p className="text-muted-foreground" data-testid="text-company-name">QATAR COMÉRCIO DE MATERIAIS ELÉTRICOS LTDA</p>
                   <p className="text-sm text-muted-foreground" data-testid="text-cnpj">CNPJ: 18.758.925/0001-61</p>
                 </div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   <i className="fas fa-map-marker-alt text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-primary mb-2">Endereço</h4>
+                  <h4 className="font-semibold text-primary mb-1">Endereço</h4>
                   <p className="text-muted-foreground" data-testid="text-address">Rua Anjo Custódio, 58 – Vila Formosa</p>
                   <p className="text-muted-foreground" data-testid="text-city">São Paulo – SP, CEP: 03358-040</p>
                 </div>
@@ -114,7 +114,7 @@ export default function Contact() {
                   <i className="fas fa-phone text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-primary mb-2">Telefone</h4>
+                  <h4 className="font-semibold text-primary mb-1">Telefone</h4>
                   <p className="text-muted-foreground" data-testid="text-phone">(11) 2651-7674</p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                   <i className="fas fa-envelope text-white"></i>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold text-primary mb-2">E-mail</h4>
+                  <h4 className="font-semibold text-primary mb-1">E-mail</h4>
                   <p className="text-muted-foreground" data-testid="text-email">vendas@qatareletrica.com.br</p>
                 </div>
               </div>
