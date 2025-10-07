@@ -4,7 +4,7 @@ import infrastructureImage from "@assets/image_1759835699824.png";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
 import motorsImage from "@assets/image_1759835827184.png";
 import sensorsImage from "@assets/image_1759835928129.png";
-import toolsImage from "@assets/vista-superior-diferentes-tipos-de-ferramentas_1758725912923.jpg";
+import toolsImage from "@assets/image_1759836017588.png";
 import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
 import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
 
@@ -52,7 +52,7 @@ export default function Products() {
       image: toolsImage,
       title: "Ferramentas",
       description: "Ferramentas profissionais e equipamentos para instalação e manutenção elétrica.",
-      objectFit: "cover"
+      objectFit: "contain"
     },
     {
       image: automationImage,
