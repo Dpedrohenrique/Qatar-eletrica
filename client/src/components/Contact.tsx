@@ -65,7 +65,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-[#162741] hero-pattern">
+    <section id="contact" className="py-16 lg:py-24 bg-[#162741]">
       <div className="container mx-auto px-4">
         <ScrollAnimation>
           <div className="text-center mb-16">
