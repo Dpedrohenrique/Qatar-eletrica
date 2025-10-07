@@ -20,7 +20,7 @@ export default function Hero() {
         <img 
           src={bannerImage} 
           alt="Materiais Elétricos de Qualidade" 
-          className="w-full h-auto block"
+          className="w-full h-[600px] object-cover block"
         />
       </div>
       <div className="absolute bottom-8 left-0 right-0">
