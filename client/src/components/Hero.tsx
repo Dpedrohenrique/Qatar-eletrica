@@ -1,5 +1,5 @@
 import { Package, Phone } from "lucide-react";
-import bannerImage from "@assets/Banner site (2)_1759800507561.png";
+import bannerImage from "@assets/Banner site_1759841791449.png";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
