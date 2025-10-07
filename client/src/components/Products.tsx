@@ -77,7 +77,7 @@ export default function Products() {
             <i className="fas fa-boxes mr-2"></i>
             Nossos Produtos
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#0202C6' }}>
             Linha Completa de Produtos
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
