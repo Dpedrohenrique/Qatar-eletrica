@@ -11,7 +11,7 @@ export default function About() {
             <img
               src={aboutImage}
               alt="Electrical equipment and industrial workspace"
-              className="rounded-2xl shadow-xl w-80 h-auto"
+              className="rounded-2xl shadow-xl w-full max-w-lg h-auto"
               data-testid="img-about-workspace"
             />
           </div>
