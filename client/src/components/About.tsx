@@ -5,11 +5,11 @@ export default function About() {
     <section id="about" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="flex justify-center lg:justify-start">
             <img
               src={aboutImage}
               alt="Electrical equipment and industrial workspace"
-              className="rounded-2xl shadow-xl w-full h-auto"
+              className="rounded-2xl shadow-xl w-80 h-auto"
               data-testid="img-about-workspace"
             />
           </div>
