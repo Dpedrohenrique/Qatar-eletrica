@@ -24,8 +24,8 @@ export default function Hero() {
         />
       </div>
       <div className="absolute bottom-8 left-0 right-0">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row gap-4 sm:justify-start">
+        <div className="px-8 sm:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => scrollToSection('products')}
               className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors text-center flex items-center justify-center gap-2"
