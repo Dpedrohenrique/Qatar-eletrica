@@ -15,11 +15,11 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative">
-      <div className="w-full">
+      <div className="w-full aspect-video">
         <img 
           src={bannerImage} 
           alt="Materiais Elétricos de Qualidade" 
-          className="w-full h-auto block"
+          className="w-full h-full object-cover block"
         />
       </div>
       <div className="absolute bottom-16 left-0 right-0">
