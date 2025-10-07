@@ -92,7 +92,7 @@ export default function Products() {
               className="bg-white rounded-xl shadow-sm card-hover p-6 border border-border"
               data-testid={`card-product-${index}`}
             >
-              <div className="w-full h-48 rounded-xl overflow-hidden mb-4">
+              <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-[#162741]">
                 <img 
                   src={product.image} 
                   alt={product.title}
@@ -100,7 +100,7 @@ export default function Products() {
                   decoding="async"
                   width="320"
                   height="192"
-                  className={`w-full h-full object-${product.objectFit} hover:scale-105 transition-transform duration-300`}
+                  className={`w-full h-full object-${product.objectFit} hover:scale-105 transition-transform duration-300 rounded-2xl`}
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">{product.title}</h3>
