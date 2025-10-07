@@ -1,4 +1,4 @@
-import { Zap, Truck, MessagesSquare, HardHat } from "lucide-react";
+import { Zap, Truck, MessagesSquare, Sparkles } from "lucide-react";
 
 export default function Differentials() {
   return (
@@ -34,16 +34,14 @@ export default function Differentials() {
             </div>
           </div>
 
-          {/* Cartão Especialistas */}
+          {/* Cartão +12 anos */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <HardHat size={48} style={{ color: '#0202C6' }} />
+                <Sparkles size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">Especialistas em:</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Materiais elétricos, controles, automação
-              </p>
+              <h3 className="text-3xl font-bold text-gray-800 mb-1">+12</h3>
+              <p className="text-gray-600 text-base">anos no mercado</p>
             </div>
           </div>
 
