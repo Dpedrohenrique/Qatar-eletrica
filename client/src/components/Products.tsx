@@ -1,6 +1,6 @@
 import wiresImage from "@assets/1 (2)_1759802009752.png";
 import lightingImage from "@assets/image_1759802084544.png";
-import infrastructureImage from "@assets/os-quadros-de-tensao-com-disjuntores-estao-nas-posicoes-e-na-caixa-eletrica-grande-para-o-painel-de-distribuicao-eletrica-e-os-cabos-eletricos-temporarios-sao-trocados_1758725508527.jpg";
+import infrastructureImage from "@assets/image_1759835699824.png";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
 import motorsImage from "@assets/freepik__motor-eletrico-weg__29916_1758730878097.png";
 import sensorsImage from "@assets/4-principais-modelos-de-sensores-de-proximidade_1758731012751.jpg";
@@ -28,7 +28,7 @@ export default function Products() {
       image: infrastructureImage,
       title: "Infraestrutura",
       description: "Componentes para infraestrutura elétrica, quadros de distribuição e painéis de controle.",
-      objectFit: "cover"
+      objectFit: "contain"
     },
     {
       image: outletsImage,
