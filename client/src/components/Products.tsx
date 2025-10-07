@@ -2,7 +2,7 @@ import wiresImage from "@assets/1 (2)_1759802009752.png";
 import lightingImage from "@assets/image_1759802084544.png";
 import infrastructureImage from "@assets/image_1759835699824.png";
 import outletsImage from "@assets/stock_images/electrical_outlets_s_10e38bb9.jpg";
-import motorsImage from "@assets/freepik__motor-eletrico-weg__29916_1758730878097.png";
+import motorsImage from "@assets/image_1759835827184.png";
 import sensorsImage from "@assets/4-principais-modelos-de-sensores-de-proximidade_1758731012751.jpg";
 import toolsImage from "@assets/vista-superior-diferentes-tipos-de-ferramentas_1758725912923.jpg";
 import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
@@ -40,7 +40,7 @@ export default function Products() {
       image: motorsImage,
       title: "Motores",
       description: "Motores elétricos industriais e comerciais para diversas aplicações e potências.",
-      objectFit: "cover"
+      objectFit: "contain"
     },
     {
       image: sensorsImage,
