@@ -84,16 +84,6 @@ export default function Header() {
           </nav>
           
           <div className="hidden md:flex items-center space-x-3">
-            <a
-              href="https://wa.me/551126517674?text=Ol%C3%A1%21%20Gostaria%20de%20ser%20um%20fornecedor%20da%20Qatar%20El%C3%A9trica."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-secondary px-4 py-1.5 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-sm"
-              data-testid="header-supplier"
-            >
-              <i className="fas fa-handshake mr-2"></i>
-              Seja nosso fornecedor
-            </a>
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-white text-secondary px-4 py-1.5 rounded-md hover:bg-secondary hover:text-white transition-colors font-medium border border-secondary text-sm"
