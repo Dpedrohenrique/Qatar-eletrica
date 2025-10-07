@@ -21,7 +21,7 @@ export default function About() {
               Sobre a Qatar Elétrica
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#0202C6' }}>
-              Excelência em Materiais Elétricos
+              Materiais elétricos e suprimentos industriais
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               A <strong>Qatar</strong> é uma distribuidora de materiais elétricos e suprimentos industriais que oferece produtos de alta qualidade para atender às demandas de indústrias de grande porte.
