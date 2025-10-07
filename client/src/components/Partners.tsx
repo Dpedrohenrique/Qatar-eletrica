@@ -65,7 +65,7 @@ export default function Partners() {
                 <img 
                   src={partner.image} 
                   alt={partner.name}
-                  className="h-12 w-auto object-contain"
+                  className="h-12 w-auto object-contain ml-[10px] mr-[10px]"
                 />
               </div>
             ))}
