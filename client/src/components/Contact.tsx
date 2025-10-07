@@ -77,7 +77,8 @@ export default function Contact() {
             Fale com Nossa Equipe
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Estamos prontos para atender suas necessidades em materiais elétricos e automação industrial.
+            Estamos prontos para atender suas necessidades em<br />
+            materiais elétricos e automação industrial.
           </p>
           </div>
         
