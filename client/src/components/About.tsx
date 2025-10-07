@@ -1,4 +1,4 @@
-import aboutImage from "@assets/freepik__isometric-geometric-illustration-clean-and-modern-__47779_1758737487270.png";
+import aboutImage from "@assets/9d66bb60-d905-4a59-a0f2-4c52fb4d21ba_1759845636189.png";
 import ScrollAnimation from "./ScrollAnimation";
 
 export default function About() {
