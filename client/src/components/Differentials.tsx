@@ -1,4 +1,3 @@
-import { Zap, Truck, MessagesSquare, Award } from "lucide-react";
 import ScrollAnimation from "./ScrollAnimation";
 
 export default function Differentials() {
@@ -18,7 +17,7 @@ export default function Differentials() {
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Zap size={48} style={{ color: '#0202C6' }} />
+                <i className="fas fa-bolt text-5xl" style={{ color: '#0202C6' }}></i>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-1">20K+</h3>
               <p className="text-gray-600 text-base">Itens em Estoque</p>
@@ -29,7 +28,7 @@ export default function Differentials() {
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Truck size={48} style={{ color: '#0202C6' }} />
+                <i className="fas fa-truck text-5xl" style={{ color: '#0202C6' }}></i>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-1">Nacional</h3>
               <p className="text-gray-600 text-base">Pronta Entrega</p>
@@ -40,7 +39,7 @@ export default function Differentials() {
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <Award size={48} style={{ color: '#0202C6' }} />
+                <i className="fas fa-award text-5xl" style={{ color: '#0202C6' }}></i>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-1">+12</h3>
               <p className="text-gray-600 text-base">anos no mercado</p>
@@ -51,7 +50,7 @@ export default function Differentials() {
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
               <div className="flex justify-center mb-3">
-                <MessagesSquare size={48} style={{ color: '#0202C6' }} />
+                <i className="fas fa-comments text-5xl" style={{ color: '#0202C6' }}></i>
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-1">Atendimento personalizado</h3>
               <p className="text-gray-600 text-base">
