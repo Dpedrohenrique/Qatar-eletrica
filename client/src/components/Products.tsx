@@ -6,7 +6,7 @@ import motorsImage from "@assets/image_1759835827184.png";
 import sensorsImage from "@assets/image_1759835928129.png";
 import toolsImage from "@assets/image_1759836017588.png";
 import automationImage from "@assets/image_1759836139725.png";
-import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
+import safetyImage from "@assets/image_1759836257564.png";
 
 import ScrollAnimation from "./ScrollAnimation";
 
@@ -64,7 +64,7 @@ export default function Products() {
       image: safetyImage,
       title: "EPIS",
       description: "Equipamentos de proteção individual para segurança em trabalhos com eletricidade.",
-      objectFit: "cover"
+      objectFit: "contain"
     }
   ];
 
