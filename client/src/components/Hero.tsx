@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="bg-[#162741] hero-pattern pt-40 pb-40 lg:pt-52 lg:pb-52">
+    <section id="home" className="bg-[#162741] hero-pattern min-h-[600px] lg:min-h-[700px] flex items-center">
       <div className="container mx-auto px-4">
         <div className="text-white max-w-4xl">
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
