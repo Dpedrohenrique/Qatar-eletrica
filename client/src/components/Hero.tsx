@@ -1,5 +1,5 @@
 import { Package, Phone } from "lucide-react";
-import bannerImage from "@assets/Banner site_1759798760187.png";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -15,16 +15,17 @@ export default function Hero() {
   };
 
   return (
-    <section id="home">
-      <div className="w-full">
-        <img 
-          src={bannerImage} 
-          alt="Materiais Elétricos de Qualidade" 
-          className="w-full h-auto block"
-        />
-      </div>
-      <div className="bg-[#162741] py-8">
-        <div className="container mx-auto px-4">
+    <section id="home" className="bg-[#162741] hero-pattern min-h-[600px] lg:min-h-[700px] flex items-center">
+      <div className="container mx-auto px-4">
+        <ScrollAnimation>
+          <div className="text-white max-w-4xl">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+            Materiais Elétricos de{" "}
+            <span className="text-[#0DCAF0]">Qualidade</span>
+          </h1>
+          <p className="text-lg lg:text-xl text-white/90 mb-8">
+            Distribuidora especializada com mais de 20 mil itens em estoque para sua obra, manutenção ou reparo.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => scrollToSection('products')}
@@ -43,7 +44,8 @@ export default function Hero() {
               Entre em Contato
             </button>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
