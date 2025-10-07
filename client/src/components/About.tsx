@@ -24,10 +24,13 @@ export default function About() {
               Excelência em Materiais Elétricos
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              A <strong>Qatar Elétrica</strong> é uma distribuidora de materiais elétricos que trabalha com as melhores marcas do mercado, tendo a linha completa de produtos para sua obra, manutenção ou reparo.
+              A Qatar é uma distribuidora de materiais elétricos e suprimentos industriais que oferece produtos de alta qualidade para atender às demandas de indústrias de grande porte.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              Nosso propósito é garantir eficiência, segurança e continuidade nas operações dos nossos clientes, oferecendo soluções ágeis, personalizadas e com excelente custo-benefício.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Localizada em São Paulo (SP), a empresa atua em todo o território nacional, com pronta entrega em toda a linha de materiais elétricos, controles e automação industrial.
+              Mais do que fornecer produtos, buscamos construir parcerias sólidas, baseadas na confiança, na proximidade e no compromisso com o crescimento de cada cliente.
             </p>
           </div>
           </div>
