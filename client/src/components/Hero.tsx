@@ -15,7 +15,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home">
+    <section id="home" className="relative">
       <div className="w-full">
         <img 
           src={bannerImage} 
@@ -23,9 +23,9 @@ export default function Hero() {
           className="w-full h-auto block"
         />
       </div>
-      <div className="bg-[#162741] py-8">
+      <div className="absolute bottom-8 left-0 right-0">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <button
               onClick={() => scrollToSection('products')}
               className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors text-center flex items-center justify-center gap-2"
