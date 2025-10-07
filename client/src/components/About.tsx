@@ -1,11 +1,13 @@
 import aboutImage from "@assets/freepik__isometric-geometric-illustration-clean-and-modern-__47779_1758737487270.png";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function About() {
   return (
     <section id="about" className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center lg:justify-start">
+        <ScrollAnimation>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center lg:justify-start">
             <img
               src={aboutImage}
               alt="Electrical equipment and industrial workspace"
@@ -28,7 +30,8 @@ export default function About() {
               Localizada em São Paulo (SP), a empresa atua em todo o território nacional, com pronta entrega em toda a linha de materiais elétricos, controles e automação industrial.
             </p>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

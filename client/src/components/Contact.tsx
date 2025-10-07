@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import ScrollAnimation from "./ScrollAnimation";
 
 function WhatsAppButton() {
   const phoneNumber = "551126517674"; // Brazil country code + phone number (correct E.164 format)
@@ -66,8 +67,9 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 lg:py-24 bg-[#162741] hero-pattern">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <ScrollAnimation>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
             <i className="fas fa-map-marker-alt mr-2"></i>
             Entre em Contato
           </div>
@@ -77,9 +79,9 @@ export default function Contact() {
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Estamos prontos para atender suas necessidades em materiais elétricos e automação industrial.
           </p>
-        </div>
+          </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-2xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold text-primary mb-6">Informações de Contato</h3>
             
@@ -243,7 +245,8 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
       <WhatsAppButton />
     </section>

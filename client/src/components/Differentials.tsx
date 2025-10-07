@@ -1,17 +1,19 @@
 import { Zap, Truck, MessagesSquare, Star } from "lucide-react";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function Differentials() {
   return (
     <section className="py-16 lg:py-24" style={{ backgroundColor: '#162741' }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
+        <ScrollAnimation>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
             Nossos Diferenciais
           </h2>
-        </div>
+          </div>
 
-        {/* Grid de 4 cartões */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Grid de 4 cartões */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Cartão 20K+ */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
@@ -59,7 +61,8 @@ export default function Differentials() {
               </p>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

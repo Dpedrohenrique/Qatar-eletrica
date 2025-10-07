@@ -1,4 +1,5 @@
 import { Package, Phone } from "lucide-react";
+import ScrollAnimation from "./ScrollAnimation";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -16,8 +17,9 @@ export default function Hero() {
   return (
     <section id="home" className="bg-[#162741] hero-pattern min-h-[600px] lg:min-h-[700px] flex items-center">
       <div className="container mx-auto px-4">
-        <div className="text-white max-w-4xl">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+        <ScrollAnimation>
+          <div className="text-white max-w-4xl">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
             Materiais Elétricos de{" "}
             <span className="text-[#0DCAF0]">Qualidade</span>
           </h1>
@@ -42,7 +44,8 @@ export default function Hero() {
               Entre em Contato
             </button>
           </div>
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

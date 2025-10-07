@@ -8,6 +8,8 @@ import toolsImage from "@assets/vista-superior-diferentes-tipos-de-ferramentas_1
 import automationImage from "@assets/stock_images/industrial_automatio_81aefaeb.jpg";
 import safetyImage from "@assets/stock_images/electrical_safety_eq_500f700e.jpg";
 
+import ScrollAnimation from "./ScrollAnimation";
+
 export default function Products() {
   const products = [
     {
@@ -60,8 +62,9 @@ export default function Products() {
   return (
     <section id="products" className="py-16 lg:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-white text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <ScrollAnimation>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center bg-white text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
             <i className="fas fa-boxes mr-2"></i>
             Nossos Produtos
           </div>
@@ -71,9 +74,9 @@ export default function Products() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Oferecemos uma ampla gama de materiais elétricos e soluções de automação industrial para atender todas as suas necessidades.
           </p>
-        </div>
+          </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <div
               key={index}
@@ -95,7 +98,8 @@ export default function Products() {
               <p className="text-muted-foreground">{product.description}</p>
             </div>
           ))}
-        </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
