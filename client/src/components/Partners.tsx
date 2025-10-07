@@ -1,29 +1,26 @@
-import pialLogo from "@assets/1_1759839802817.png";
+import pialLogo from "@assets/1_1759839878463.png";
+import philipsLogo from "@assets/2_1759839880952.png";
+import siemensLogo from "@assets/3_1759839882963.png";
+import schmersalLogo from "@assets/4_1759839884699.png";
+import schneiderLogo from "@assets/5_1759839886216.png";
+import balluffLogo from "@assets/6_1759839888083.png";
+import deusermanLogo from "@assets/7_1759839898488.png";
+import steckLogo from "@assets/8_1759839906395.png";
+import sickLogo from "@assets/9_1759839908111.png";
+import ifmLogo from "@assets/10_1759839909942.png";
 
 export default function Partners() {
   const partners = [
-    { name: "STECK", color: "text-red-600" },
-    { name: "Schneider Electric", color: "text-green-600", subtitle: "Electric" },
-    { name: "EATON", color: "text-blue-600" },
-    { name: "PHILIPS", color: "text-blue-500" },
-    { name: "OSRAM", color: "text-orange-500" },
-    { name: "BALLUFF", color: "text-gray-800" },
-    { name: "ifm", color: "text-orange-500" },
-    { name: "HellermannTyton", color: "text-blue-700" },
-    { name: "SICK", color: "text-blue-500" },
-    { name: "PRYSMIAN", color: "text-purple-600" },
-    { name: "PIAL", color: "text-gray-700", image: pialLogo },
-    { name: "Conexel", color: "text-orange-500" },
-    { name: "OMRON", color: "text-blue-600" },
-    { name: "DAISA", color: "text-red-600" },
-    { name: "SIEMENS", color: "text-teal-600" },
-    { name: "Kanaflex", color: "text-blue-500" },
-    { name: "POLEODUTO", color: "text-gray-700" },
-    { name: "SINDAL", color: "text-red-600" },
-    { name: "SCHMERSAL", color: "text-gray-700" },
-    { name: "MAGNET", color: "text-red-600" },
-    { name: "Allen-Bradley", color: "text-red-600" },
-    { name: "SENSE", color: "text-green-600" }
+    { name: "PIAL", image: pialLogo },
+    { name: "PHILIPS", image: philipsLogo },
+    { name: "SIEMENS", image: siemensLogo },
+    { name: "SCHMERSAL", image: schmersalLogo },
+    { name: "Schneider Electric", image: schneiderLogo },
+    { name: "BALLUFF", image: balluffLogo },
+    { name: "DEUSERMAN", image: deusermanLogo },
+    { name: "STECK", image: steckLogo },
+    { name: "SICK", image: sickLogo },
+    { name: "ifm", image: ifmLogo }
   ];
 
   return (
@@ -51,15 +48,11 @@ export default function Partners() {
                 className="flex-shrink-0 w-48 mx-4 flex items-center justify-center p-6 bg-muted rounded-xl hover:shadow-md transition-shadow"
                 data-testid={`partner-${index}`}
               >
-                <div className={`${partner.color} font-bold text-xl text-center`}>
-                  {partner.name}
-                  {partner.subtitle && (
-                    <>
-                      <br />
-                      <span className="text-sm">{partner.subtitle}</span>
-                    </>
-                  )}
-                </div>
+                <img 
+                  src={partner.image} 
+                  alt={partner.name}
+                  className="h-12 w-auto object-contain"
+                />
               </div>
             ))}
             {/* Duplicate set for infinite scroll */}
@@ -69,15 +62,11 @@ export default function Partners() {
                 className="flex-shrink-0 w-48 mx-4 flex items-center justify-center p-6 bg-muted rounded-xl hover:shadow-md transition-shadow"
                 data-testid={`partner-duplicate-${index}`}
               >
-                <div className={`${partner.color} font-bold text-xl text-center`}>
-                  {partner.name}
-                  {partner.subtitle && (
-                    <>
-                      <br />
-                      <span className="text-sm">{partner.subtitle}</span>
-                    </>
-                  )}
-                </div>
+                <img 
+                  src={partner.image} 
+                  alt={partner.name}
+                  className="h-12 w-auto object-contain"
+                />
               </div>
             ))}
           </div>
