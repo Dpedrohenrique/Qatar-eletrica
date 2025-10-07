@@ -18,7 +18,7 @@ export default function Header() {
     const element = document.getElementById(sectionId);
     if (element) {
       const header = document.querySelector('header');
-      const headerHeight = header?.getBoundingClientRect().height || 112;
+      const headerHeight = header?.getBoundingClientRect().height || 80;
       const targetPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: targetPosition,
@@ -32,14 +32,14 @@ export default function Header() {
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       scrolled ? 'bg-transparent backdrop-blur-md' : 'bg-white shadow-sm'
     }`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <img 
                 src={qatarLogo}
                 alt="Qatar Elétrica" 
-                className="h-12 w-auto object-contain"
+                className="h-10 w-auto object-contain"
                 data-testid="img-logo"
               />
             </div>
