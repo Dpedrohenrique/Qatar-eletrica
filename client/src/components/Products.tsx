@@ -15,47 +15,56 @@ export default function Products() {
     {
       image: wiresImage,
       title: "Fios e Cabos",
-      description: "Fios e cabos elétricos de alta qualidade para instalações residenciais, comerciais e industriais."
+      description: "Fios e cabos elétricos de alta qualidade para instalações residenciais, comerciais e industriais.",
+      objectFit: "cover"
     },
     {
       image: lightingImage,
       title: "Iluminação",
-      description: "Soluções completas em iluminação LED, lâmpadas e luminárias para todos os ambientes."
+      description: "Soluções completas em iluminação LED, lâmpadas e luminárias para todos os ambientes.",
+      objectFit: "contain"
     },
     {
       image: infrastructureImage,
       title: "Infraestrutura",
-      description: "Componentes para infraestrutura elétrica, quadros de distribuição e painéis de controle."
+      description: "Componentes para infraestrutura elétrica, quadros de distribuição e painéis de controle.",
+      objectFit: "cover"
     },
     {
       image: outletsImage,
       title: "Tomadas e Interruptores",
-      description: "Tomadas, interruptores e componentes para instalações elétricas residenciais e comerciais."
+      description: "Tomadas, interruptores e componentes para instalações elétricas residenciais e comerciais.",
+      objectFit: "cover"
     },
     {
       image: motorsImage,
       title: "Motores",
-      description: "Motores elétricos industriais e comerciais para diversas aplicações e potências."
+      description: "Motores elétricos industriais e comerciais para diversas aplicações e potências.",
+      objectFit: "cover"
     },
     {
       image: sensorsImage,
       title: "Sensores",
-      description: "Sensores industriais para automação, controle de processos e monitoramento."
+      description: "Sensores industriais para automação, controle de processos e monitoramento.",
+      objectFit: "cover"
     },
     {
       image: toolsImage,
       title: "Ferramentas",
-      description: "Ferramentas profissionais e equipamentos para instalação e manutenção elétrica."
+      description: "Ferramentas profissionais e equipamentos para instalação e manutenção elétrica.",
+      objectFit: "cover"
     },
     {
       image: automationImage,
       title: "Automação",
-      description: "Sistemas de automação industrial, CLPs, IHMs e soluções para controle de processos."
+      description: "Sistemas de automação industrial, CLPs, IHMs e soluções para controle de processos.",
+      objectFit: "cover"
     },
     {
       image: safetyImage,
       title: "EPIS",
-      description: "Equipamentos de proteção individual para segurança em trabalhos com eletricidade."
+      description: "Equipamentos de proteção individual para segurança em trabalhos com eletricidade.",
+      objectFit: "cover"
     }
   ];
 
@@ -91,7 +100,7 @@ export default function Products() {
                   decoding="async"
                   width="320"
                   height="192"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-full object-${product.objectFit} hover:scale-105 transition-transform duration-300`}
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary mb-3">{product.title}</h3>
