@@ -1,4 +1,4 @@
-import { Zap, Truck, Users, Settings, HardHat } from "lucide-react";
+import { Zap, Truck, MessagesSquare, HardHat } from "lucide-react";
 
 export default function Differentials() {
   return (
@@ -50,9 +50,8 @@ export default function Differentials() {
           {/* Cartão Atendimento personalizado */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
-              <div className="flex justify-center items-center mb-3" style={{ color: '#0202C6' }}>
-                <Users size={24} className="mr-1" />
-                <Settings size={24} />
+              <div className="flex justify-center mb-3">
+                <MessagesSquare size={48} style={{ color: '#0202C6' }} />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Atendimento personalizado</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
