@@ -136,10 +136,10 @@ export default function Contact() {
                   href="https://wa.me/551126517674?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20materiais%20el%C3%A9tricos%20da%20Qatar%20El%C3%A9trica."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 border-2 border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors text-center"
+                  className="flex-1 border-2 border-secondary text-secondary px-8 py-4 rounded-lg font-semibold hover:bg-secondary hover:text-white transition-colors text-center text-lg"
                   data-testid="button-whatsapp"
                 >
-                  <i className="fas fa-mobile-alt mr-2" style={{ color: '#0202C6' }}></i>
+                  <i className="fas fa-mobile-alt mr-2 text-xl" style={{ color: '#0202C6' }}></i>
                   Chamar no WhatsApp
                 </a>
                 <a
