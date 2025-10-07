@@ -37,10 +37,10 @@ export default function Differentials() {
           {/* Cartão +12 anos */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="text-center">
-              <div className="flex justify-center items-center gap-2 mb-3">
-                <Star size={32} fill="#0202C6" style={{ color: '#0202C6' }} />
-                <Star size={32} fill="#0202C6" style={{ color: '#0202C6' }} />
-                <Star size={32} fill="#0202C6" style={{ color: '#0202C6' }} />
+              <div className="flex justify-center items-end gap-2 mb-3">
+                <Star size={32} style={{ color: '#0202C6' }} />
+                <Star size={32} style={{ color: '#0202C6' }} className="-mb-2" />
+                <Star size={32} style={{ color: '#0202C6' }} />
               </div>
               <h3 className="text-3xl font-bold text-gray-800 mb-1">+12</h3>
               <p className="text-gray-600 text-base">anos no mercado</p>
