@@ -27,7 +27,7 @@ export default function Partners() {
             <i className="fas fa-handshake mr-2"></i>
             Principais Marcas
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#0202C6' }}>
             Trabalhamos com as Melhores Marcas
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

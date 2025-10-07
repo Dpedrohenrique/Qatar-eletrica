@@ -20,7 +20,7 @@ export default function About() {
               <i className="fas fa-award mr-2"></i>
               Sobre a Qatar Elétrica
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#0202C6' }}>
               Excelência em Materiais Elétricos
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
