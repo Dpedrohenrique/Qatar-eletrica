@@ -20,7 +20,7 @@ export default function Differentials() {
               <div className="flex justify-center mb-3">
                 <Zap size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-1">20K+</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-1">20K+</h3>
               <p className="text-gray-600 text-base">Itens em Estoque</p>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function Differentials() {
               <div className="flex justify-center mb-3">
                 <Truck size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-1">Nacional</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-1">Nacional</h3>
               <p className="text-gray-600 text-base">Pronta Entrega</p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Differentials() {
               <div className="flex justify-center mb-3">
                 <Award size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-1">+12</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-1">+12</h3>
               <p className="text-gray-600 text-base">anos no mercado</p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Differentials() {
               <div className="flex justify-center mb-3">
                 <MessagesSquare size={48} style={{ color: '#0202C6' }} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-1">Atendimento personalizado</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-1">Atendimento personalizado</h3>
               <p className="text-gray-600 text-base">
                 Equipe Especializada
               </p>
