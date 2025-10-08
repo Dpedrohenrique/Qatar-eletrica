@@ -8,7 +8,7 @@ export default function Map() {
             Nossa Localização
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estamos localizados na Vila Formosa, São Paulo. Venha conhecer nosso showroom com mais de 20.000 itens em estoque.
+            Estamos localizados na Vila Formosa, São Paulo.
           </p>
         </div>
         
