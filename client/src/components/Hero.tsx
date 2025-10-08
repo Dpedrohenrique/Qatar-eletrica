@@ -15,11 +15,11 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative">
-      <div className="w-full h-[300px] sm:h-[400px] md:h-auto bg-[#162741]">
+      <div className="w-full h-auto bg-[#162741]">
         <img 
           src={bannerImage} 
           alt="Materiais Elétricos de Qualidade" 
-          className="w-full h-full object-contain object-center md:object-cover md:h-auto"
+          className="w-full h-auto object-cover"
         />
       </div>
       <div className="absolute bottom-6 sm:bottom-12 md:bottom-16 left-0 right-0">
@@ -27,18 +27,18 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 max-w-[280px] sm:max-w-none">
             <button
               onClick={() => scrollToSection('products')}
-              className="border-2 border-white text-white px-4 py-2 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base w-full sm:w-auto"
+              className="border-2 border-white text-white px-3 py-1.5 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-base w-full sm:w-auto"
               data-testid="button-products"
             >
-              <i className="fas fa-box text-xs sm:text-base"></i>
+              <i className="fas fa-box text-[10px] sm:text-base"></i>
               Ver Produtos
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-4 py-2 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base w-full sm:w-auto"
+              className="border-2 border-white text-white px-3 py-1.5 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-base w-full sm:w-auto"
               data-testid="button-contact"
             >
-              <i className="fas fa-phone text-xs sm:text-base"></i>
+              <i className="fas fa-phone text-[10px] sm:text-base"></i>
               Entre em Contato
             </button>
           </div>
