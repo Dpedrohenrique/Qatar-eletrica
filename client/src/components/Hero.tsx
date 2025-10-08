@@ -22,12 +22,12 @@ export default function Hero() {
           className="w-full h-full object-contain object-center md:object-cover md:h-auto"
         />
       </div>
-      <div className="absolute bottom-16 left-0 right-0">
-        <div className="pl-10 sm:pl-16 md:pl-24 lg:pl-28">
-          <div className="flex flex-col sm:flex-row gap-4">
+      <div className="absolute bottom-6 sm:bottom-12 md:bottom-16 left-0 right-0">
+        <div className="px-4 sm:px-8 md:pl-24 lg:pl-28">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <button
               onClick={() => scrollToSection('products')}
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-2"
+              className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-2 text-sm sm:text-base"
               data-testid="button-products"
             >
               <i className="fas fa-box"></i>
@@ -35,7 +35,7 @@ export default function Hero() {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-2"
+              className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center flex items-center justify-center gap-2 text-sm sm:text-base"
               data-testid="button-contact"
             >
               <i className="fas fa-phone"></i>
